@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Organograma from "./components/Organograma.vue";
+import Organograma from "./components/Organograma";
 
 export default {
   name: "App",

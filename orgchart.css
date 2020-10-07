@@ -148,12 +148,15 @@
   -webkit-box-sizing:border-box;
   box-sizing:border-box;
   display:inline-block;
-  position:relative;
+  position: relative;
   margin:0;
   padding:3px;
   border:2px dashed transparent;
   text-align:center;
-  width:120px
+  /* Tamanho focus */
+  width:150px;
+  /* Espaçamento entre os cards */
+  margin-right: 25px;
 }
 .orgchart.l2r .node,.orgchart.r2l .node{
   width:50px;
@@ -169,12 +172,14 @@
 }
 .orgchart .node:hover{
   -webkit-transition:.5s;
-  transition:.5s;
+  transition: all .5s ease-in;
   cursor:default;
   z-index:20
 }
 .orgchart .node.focused,.orgchart .node:hover{
-  background-color:rgb(226, 226, 4)
+  /* background-color:rgb(226, 226, 4); */
+  position:relative;
+  bottom: 10px;
 }
 .orgchart .ghost-node{
   position:fixed;
